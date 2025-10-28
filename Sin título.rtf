@@ -1,0 +1,615 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="es">\
+  <head>\
+    <meta charset="UTF-8" />\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />\
+    <title> Calderona Services - Servicios Profesionales</title>\
+    <meta\
+      name="description"\
+      content="Servicios profesionales de alta calidad. Respuesta r\'e1pida, trato cercano y resultados garantizados."\
+    />\
+\
+    <style>\
+      /* ====== RESET B\'c1SICO ====== */\
+      *, *::before, *::after \{\
+        box-sizing: border-box;\
+      \}\
+      body \{\
+        margin: 0;\
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter",\
+          "Roboto", "Segoe UI", sans-serif;\
+        background-color: #0f172a; /* gris azul oscuro */\
+        color: #f8fafc; /* casi blanco */\
+        line-height: 1.5;\
+        -webkit-font-smoothing: antialiased;\
+      \}\
+      img \{\
+        max-width: 100%;\
+        display: block;\
+      \}\
+      h1, h2, h3 \{\
+        line-height: 1.2;\
+        color: #fff;\
+        margin-top: 0;\
+      \}\
+      p \{\
+        color: #94a3b8; /* gris suave */\
+        margin-top: 0.5rem;\
+        margin-bottom: 1rem;\
+        font-size: 1rem;\
+      \}\
+      a \{\
+        color: inherit;\
+        text-decoration: none;\
+      \}\
+\
+      /* ====== LAYOUT UTILITY ====== */\
+      .wrapper \{\
+        max-width: 1200px;\
+        padding: 2rem 1.25rem;\
+        margin: 0 auto;\
+      \}\
+\
+      /* ====== NAV BAR ====== */\
+      header.navbar \{\
+        border-bottom: 1px solid #1e293b;\
+        background-color: rgba(15, 23, 42, 0.6);\
+        backdrop-filter: blur(12px);\
+        position: sticky;\
+        top: 0;\
+        z-index: 999;\
+      \}\
+      .nav-inner \{\
+        max-width: 1200px;\
+        margin: 0 auto;\
+        padding: 1rem 1.25rem;\
+        display: flex;\
+        align-items: center;\
+        justify-content: space-between;\
+      \}\
+      .brand \{\
+        font-weight: 600;\
+        font-size: 1rem;\
+        color: #fff;\
+      \}\
+      .nav-links \{\
+        display: flex;\
+        gap: 1rem;\
+        font-size: 0.9rem;\
+        color: #cbd5e1;\
+      \}\
+      .nav-links a:hover \{\
+        color: #fff;\
+      \}\
+\
+      /* ====== BOTONES / CTA ====== */\
+      .btn \{\
+        display: inline-block;\
+        background-color: #3b82f6;\
+        color: #fff;\
+        font-weight: 600;\
+        border: 0;\
+        border-radius: 0.5rem;\
+        padding: 0.8rem 1rem;\
+        cursor: pointer;\
+        font-size: 1rem;\
+        text-align: center;\
+        box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);\
+      \}\
+      .btn:hover \{\
+        filter: brightness(1.1);\
+      \}\
+\
+      /* ====== HERO ====== */\
+      .hero \{\
+        background: radial-gradient(\
+            circle at 20% 20%,\
+            rgba(59, 130, 246, 0.18) 0%,\
+            rgba(15, 23, 42, 0) 60%\
+          ),\
+          radial-gradient(\
+            circle at 80% 0%,\
+            rgba(16, 185, 129, 0.15) 0%,\
+            rgba(15, 23, 42, 0) 60%\
+          );\
+        padding-top: 4rem;\
+        padding-bottom: 4rem;\
+        border-bottom: 1px solid #1e293b;\
+      \}\
+      .hero-grid \{\
+        display: grid;\
+        grid-template-columns: 1fr;\
+        gap: 2rem;\
+      \}\
+      @media (min-width: 768px) \{\
+        .hero-grid \{\
+          grid-template-columns: 1fr 1fr;\
+          align-items: center;\
+        \}\
+      \}\
+      .hero-headline \{\
+        font-size: clamp(2rem, 2.5vw, 2.75rem);\
+        font-weight: 600;\
+        letter-spacing: -0.04em;\
+        margin-bottom: 1rem;\
+      \}\
+      .hero-sub \{\
+        font-size: 1.125rem;\
+        color: #94a3b8;\
+        max-width: 40ch;\
+        margin-bottom: 2rem;\
+      \}\
+      .hero-card \{\
+        background-color: rgba(30, 41, 59, 0.6);\
+        border: 1px solid #334155;\
+        border-radius: 0.75rem;\
+        padding: 1.5rem;\
+        color: #cbd5e1;\
+        font-size: 0.95rem;\
+      \}\
+      .hero-card h3 \{\
+        margin: 0 0 0.5rem 0;\
+        font-size: 1rem;\
+        font-weight: 600;\
+        color: #fff;\
+      \}\
+\
+      /* ====== SERVICIOS ====== */\
+      section#servicios \{\
+        padding-top: 4rem;\
+        padding-bottom: 4rem;\
+        border-bottom: 1px solid #1e293b;\
+        background: radial-gradient(\
+            circle at 0% 100%,\
+            rgba(99, 102, 241, 0.16) 0%,\
+            rgba(15, 23, 42, 0) 60%\
+          ),\
+          transparent;\
+      \}\
+\
+      .section-head \{\
+        text-align: center;\
+        max-width: 700px;\
+        margin: 0 auto 3rem;\
+      \}\
+      .eyebrow \{\
+        display: inline-block;\
+        font-size: 0.75rem;\
+        font-weight: 500;\
+        color: #38bdf8;\
+        background-color: rgba(56, 189, 248, 0.1);\
+        border: 1px solid rgba(56, 189, 248, 0.4);\
+        padding: 0.4rem 0.6rem;\
+        border-radius: 999px;\
+        margin-bottom: 1rem;\
+      \}\
+\
+      .cards-grid \{\
+        display: grid;\
+        grid-template-columns: 1fr;\
+        gap: 1.5rem;\
+      \}\
+      @media (min-width: 768px) \{\
+        .cards-grid \{\
+          grid-template-columns: repeat(3, 1fr);\
+        \}\
+      \}\
+\
+      .card \{\
+        background-color: #1e2538;\
+        border: 1px solid #334155;\
+        border-radius: 0.75rem;\
+        padding: 1.5rem;\
+        display: flex;\
+        flex-direction: column;\
+        justify-content: space-between;\
+      \}\
+      .card h3 \{\
+        color: #fff;\
+        font-size: 1.1rem;\
+        margin-bottom: 0.5rem;\
+      \}\
+      .card p \{\
+        font-size: 0.95rem;\
+        color: #94a3b8;\
+        flex-grow: 1;\
+      \}\
+      .card-price \{\
+        margin-top: 1rem;\
+        font-size: 0.9rem;\
+        color: #fff;\
+        font-weight: 500;\
+      \}\
+\
+      /* ====== RAZONES / DIFERENCIA ====== */\
+      section#por-que \{\
+        padding-top: 4rem;\
+        padding-bottom: 4rem;\
+        border-bottom: 1px solid #1e293b;\
+      \}\
+      .features-grid \{\
+        display: grid;\
+        gap: 1.5rem;\
+        grid-template-columns: 1fr;\
+      \}\
+      @media (min-width: 768px) \{\
+        .features-grid \{\
+          grid-template-columns: repeat(4, 1fr);\
+        \}\
+      \}\
+      .feature-box \{\
+        background-color: rgba(30, 41, 59, 0.4);\
+        border: 1px solid #334155;\
+        border-radius: 0.75rem;\
+        padding: 1.25rem;\
+      \}\
+      .feature-title \{\
+        font-size: 0.9rem;\
+        font-weight: 600;\
+        color: #fff;\
+        margin-bottom: 0.5rem;\
+      \}\
+      .feature-desc \{\
+        font-size: 0.9rem;\
+        color: #94a3b8;\
+        margin: 0;\
+      \}\
+\
+      /* ====== TESTIMONIOS ====== */\
+      section#testimonios \{\
+        padding-top: 4rem;\
+        padding-bottom: 4rem;\
+        border-bottom: 1px solid #1e293b;\
+        background: radial-gradient(\
+            circle at 100% 0%,\
+            rgba(16, 185, 129, 0.15) 0%,\
+            rgba(15, 23, 42, 0) 60%\
+          ),\
+          transparent;\
+      \}\
+\
+      .testi-grid \{\
+        display: grid;\
+        gap: 1.5rem;\
+      \}\
+      @media (min-width: 768px) \{\
+        .testi-grid \{\
+          grid-template-columns: repeat(3, 1fr);\
+        \}\
+      \}\
+      .testi-card \{\
+        background-color: #1e2538;\
+        border: 1px solid #334155;\
+        border-radius: 0.75rem;\
+        padding: 1.5rem;\
+        font-size: 0.95rem;\
+        color: #94a3b8;\
+        position: relative;\
+      \}\
+      .testi-name \{\
+        margin-top: 1rem;\
+        font-weight: 600;\
+        color: #fff;\
+        font-size: 0.9rem;\
+      \}\
+      .stars \{\
+        color: #fde047;\
+        font-size: 0.8rem;\
+      \}\
+\
+      /* ====== CTA FINAL / CONTACTO ====== */\
+      section#contacto \{\
+        padding-top: 4rem;\
+        padding-bottom: 4rem;\
+      \}\
+      .contact-grid \{\
+        display: grid;\
+        gap: 2rem;\
+      \}\
+      @media (min-width: 768px) \{\
+        .contact-grid \{\
+          grid-template-columns: 1fr 1fr;\
+        \}\
+      \}\
+      .contact-box \{\
+        background-color: rgba(30, 41, 59, 0.6);\
+        border: 1px solid #334155;\
+        border-radius: 0.75rem;\
+        padding: 1.5rem;\
+      \}\
+      label \{\
+        font-size: 0.8rem;\
+        color: #cbd5e1;\
+        display: block;\
+        margin-bottom: 0.35rem;\
+        font-weight: 500;\
+      \}\
+      input,\
+      textarea \{\
+        width: 100%;\
+        background-color: #0f172a;\
+        color: #fff;\
+        border: 1px solid #334155;\
+        border-radius: 0.5rem;\
+        padding: 0.75rem 0.75rem;\
+        font-size: 1rem;\
+        font-family: inherit;\
+      \}\
+      textarea \{\
+        min-height: 120px;\
+        resize: vertical;\
+      \}\
+      form .btn \{\
+        width: 100%;\
+        margin-top: 1rem;\
+      \}\
+\
+      /* ====== FOOTER ====== */\
+      footer \{\
+        border-top: 1px solid #1e293b;\
+        background-color: #0f172a;\
+        text-align: center;\
+        font-size: 0.8rem;\
+        color: #64748b;\
+        padding: 2rem 1rem 4rem;\
+      \}\
+      footer a \{\
+        color: #94a3b8;\
+      \}\
+      footer a:hover \{\
+        color: #fff;\
+      \}\
+    </style>\
+  </head>\
+\
+  <body>\
+    <!-- ====== NAV ====== -->\
+    <header class="navbar">\
+      <div class="nav-inner">\
+        <div class="brand">TU NEGOCIO</div>\
+        <nav class="nav-links">\
+          <a href="#servicios">Servicios</a>\
+          <a href="#por-que">Por qu\'e9 elegirnos</a>\
+          <a href="#testimonios">Opiniones</a>\
+          <a href="#contacto" class="btn" style="padding:0.5rem 0.75rem;font-size:.8rem;font-weight:500;box-shadow:none;">Pide presupuesto</a>\
+        </nav>\
+      </div>\
+    </header>\
+\
+    <!-- ====== HERO ====== -->\
+    <section class="hero">\
+      <div class="wrapper hero-grid">\
+        <div>\
+          <h1 class="hero-headline">\
+            [Tu servicio principal] profesional, r\'e1pido y sin sorpresas.\
+          </h1>\
+          <p class="hero-sub">\
+            Trabajamos en [tu ciudad / zona] ofreciendo resultados de calidad,\
+            atenci\'f3n cercana y precios claros. Pide tu presupuesto gratis.\
+          </p>\
+\
+          <a class="btn" href="#contacto">Quiero un presupuesto \uc0\u8594 </a>\
+        </div>\
+\
+        <div class="hero-card">\
+          <h3>Respuesta en menos de 24h*</h3>\
+          <p>\
+            Cu\'e9ntanos qu\'e9 necesitas y te damos una soluci\'f3n clara: precio,\
+            plazo y siguiente paso. Sin letra peque\'f1a.\
+          </p>\
+\
+          <h3>Garant\'eda de satisfacci\'f3n</h3>\
+          <p>\
+            Si no quedas satisfecho, repetimos o te devolvemos el dinero. As\'ed\
+            de simple.\
+          </p>\
+\
+          <small style="color:#64748b;font-size:.7rem;">*Horario laboral</small>\
+        </div>\
+      </div>\
+    </section>\
+\
+    <!-- ====== SERVICIOS ====== -->\
+    <section id="servicios">\
+      <div class="wrapper">\
+        <div class="section-head">\
+          <div class="eyebrow">Nuestros servicios</div>\
+          <h2>\'bfEn qu\'e9 podemos ayudarte?</h2>\
+          <p>\
+            Estos son los servicios m\'e1s solicitados por nuestros clientes. Si\
+            necesitas algo m\'e1s espec\'edfico, escr\'edbenos.\
+          </p>\
+        </div>\
+\
+        <div class="cards-grid">\
+          <div class="card">\
+            <h3>Servicio 1</h3>\
+            <p>\
+              Explica el problema que resuelves. Ejemplo: \'93Instalaci\'f3n y\
+              mantenimiento de [X] para hogares y negocios.\'94\
+            </p>\
+            <div class="card-price">Desde 49\'80 + IVA</div>\
+          </div>\
+\
+          <div class="card">\
+            <h3>Servicio 2</h3>\
+            <p>\
+              Habla del beneficio, no solo de la tarea t\'e9cnica. \'93Ahorra\
+              tiempo, evita aver\'edas y cumple la normativa.\'94\
+            </p>\
+            <div class="card-price">Presupuesto a medida</div>\
+          </div>\
+\
+          <div class="card">\
+            <h3>Servicio 3</h3>\
+            <p>\
+              A\'f1ade aqu\'ed tu servicio estrella / diferenciador / urgente 24h.\
+            </p>\
+            <div class="card-price">Servicio urgente disponible</div>\
+          </div>\
+        </div>\
+      </div>\
+    </section>\
+\
+    <!-- ====== POR QU\'c9 ELEGIRNOS ====== -->\
+    <section id="por-que">\
+      <div class="wrapper">\
+        <div class="section-head" style="margin-bottom:2rem;">\
+          <div class="eyebrow">\'bfPor qu\'e9 nosotros?</div>\
+          <h2>Profesionales de confianza</h2>\
+          <p>\
+            Creamos relaciones a largo plazo. Esto es lo que nuestros clientes\
+            valoran m\'e1s.\
+          </p>\
+        </div>\
+\
+        <div class="features-grid">\
+          <div class="feature-box">\
+            <div class="feature-title">Experiencia real</div>\
+            <p class="feature-desc">\
+              M\'e1s de 10 a\'f1os trabajando en el sector y m\'e1s de 500 proyectos\
+              completados.\
+            </p>\
+          </div>\
+\
+          <div class="feature-box">\
+            <div class="feature-title">Transparencia total</div>\
+            <p class="feature-desc">\
+              Te explicamos el qu\'e9, el c\'f3mo y el cu\'e1nto antes de empezar.\
+            </p>\
+          </div>\
+\
+          <div class="feature-box">\
+            <div class="feature-title">Respuesta r\'e1pida</div>\
+            <p class="feature-desc">\
+              Te damos precio y disponibilidad sin marearte con mil llamadas.\
+            </p>\
+          </div>\
+\
+          <div class="feature-box">\
+            <div class="feature-title">Garant\'eda escrita</div>\
+            <p class="feature-desc">\
+              Todo por escrito. Si algo falla, lo solucionamos.\
+            </p>\
+          </div>\
+        </div>\
+      </div>\
+    </section>\
+\
+    <!-- ====== TESTIMONIOS ====== -->\
+    <section id="testimonios">\
+      <div class="wrapper">\
+        <div class="section-head" style="margin-bottom:2rem;">\
+          <div class="eyebrow">Opiniones reales</div>\
+          <h2>Lo que dicen nuestros clientes</h2>\
+          <p>\
+            La mayor\'eda de nuestros nuevos clientes llegan recomendados. Por\
+            algo ser\'e1 \uc0\u55357 \u56898 \
+          </p>\
+        </div>\
+\
+        <div class="testi-grid">\
+          <div class="testi-card">\
+            <div class="stars">\uc0\u9733 \u9733 \u9733 \u9733 \u9733 </div>\
+            \'93Profesionales, r\'e1pidos y s\'faper claros con el precio.\
+            Totalmente recomendables.\'94\
+            <div class="testi-name">Laura G.</div>\
+          </div>\
+\
+          <div class="testi-card">\
+            <div class="stars">\uc0\u9733 \u9733 \u9733 \u9733 \u9733 </div>\
+            \'93Nos salvaron de una urgencia en menos de una hora.\
+            Un 10/10.\'94\
+            <div class="testi-name">Carlos R.</div>\
+          </div>\
+\
+          <div class="testi-card">\
+            <div class="stars">\uc0\u9733 \u9733 \u9733 \u9733 \u9733 </div>\
+            \'93Calidad excelente y trato muy cercano. Ya es nuestra empresa de\
+            confianza.\'94\
+            <div class="testi-name">Marta P.</div>\
+          </div>\
+        </div>\
+      </div>\
+    </section>\
+\
+    <!-- ====== CONTACTO ====== -->\
+    <section id="contacto">\
+      <div class="wrapper contact-grid">\
+        <div>\
+          <h2>\'bfHablamos?</h2>\
+          <p>\
+            Cu\'e9ntanos qu\'e9 necesitas y te responderemos lo antes posible con un\
+            presupuesto sin compromiso.\
+          </p>\
+\
+          <p style="color:#cbd5e1;font-weight:500;">\
+            Tel\'e9fono: <a href="tel:697911318>697911318</a><br />\
+            WhatsApp: <a href="https://wa.me/697911318></a><br />\
+            Email: <a href="mailto:info@tunegocio.com">info@tunegocio.com</a>\
+          </p>\
+\
+          <p style="font-size:.8rem;color:#64748b;margin-top:1.5rem;">\
+            Horario: L-V 9:00 - 19:00\
+          </p>\
+        </div>\
+\
+        <div class="contact-box">\
+          <form onsubmit="enviarFormulario(event)">\
+            <label for="nombre">Nombre</label>\
+            <input id="nombre" name="nombre" placeholder="Tu nombre" required />\
+\
+            <label for="email">Email</label>\
+            <input\
+              id="email"\
+              name="email"\
+              type="email"\
+              placeholder="tucorreo@email.com"\
+              required\
+            />\
+\
+            <label for="mensaje">\'bfQu\'e9 necesitas?</label>\
+            <textarea\
+              id="mensaje"\
+              name="mensaje"\
+              placeholder="Cu\'e9ntanos tu caso en 2-3 l\'edneas..."\
+              required\
+            ></textarea>\
+\
+            <button class="btn" type="submit">Enviar mensaje</button>\
+\
+            <p id="form-status" style="font-size:.8rem;color:#94a3b8;"></p>\
+          </form>\
+        </div>\
+      </div>\
+    </section>\
+\
+    <footer>\
+      \'a9 <span id="year"></span> Tu Negocio \'b7 Todos los derechos reservados \'b7\
+      <a href="#">Aviso legal</a> \'b7 <a href="#">Pol\'edtica de privacidad</a>\
+    </footer>\
+\
+    <!-- ====== JS B\'c1SICO ====== -->\
+    <script>\
+      // A\'f1o autom\'e1tico en el footer\
+      document.getElementById("year").textContent = new Date().getFullYear();\
+\
+      // Simulaci\'f3n de env\'edo de formulario (front-end)\
+      function enviarFormulario(e) \{\
+        e.preventDefault();\
+        const status = document.getElementById("form-status");\
+        status.textContent =\
+          "Gracias. Hemos recibido tu mensaje y te contactaremos en breve.";\
+        e.target.reset();\
+      \}\
+    </script>\
+  </body>\
+</html>\
+}
